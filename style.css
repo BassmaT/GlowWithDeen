@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    margin: 40px 0;
+    margin: 40px 0; /* abstand zum header*/
 }
 
 h1 {
@@ -36,7 +36,7 @@ main {
     background-color: #f3dce5;
     width: 200px;
     height: 150px;
-    border-radius: 15px;
+    border-radius: 15px; /*  runde ecken*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +47,7 @@ main {
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* wenn man drüber hoovert wird es leicht größer*/
 }
 
 .overlay {
@@ -68,3 +68,25 @@ main {
 .card:hover .overlay {
     opacity: 1;
 }
+.post-card {
+    background-color: #f3dce5;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    color: #7a4e57;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none; /* Versteckt blau/unterstrichen */
+    transition: transform 0.3s ease;
+    display: block;
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin-inline: auto;
+    text-align: center;
+  }
+  
+  .post-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
